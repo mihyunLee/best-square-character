@@ -1,0 +1,49 @@
+@keyframes wink-close {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes wink-open {
+  to {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes twinkle {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.wink-close {
+  animation-name: wink-close;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.wink-open {
+  animation-name: wink-open;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.twinkle {
+  animation-name: twinkle;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.eye-wink {
+  display: block;
+  width: 44px;
+  height: 5px;
+  border-radius: 30%;
+  background-color: #000;
+  opacity: 0;
+
+  top: 162px;
+  right: 117px;
+  transform: rotate(45deg);
+}
